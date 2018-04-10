@@ -8,12 +8,14 @@
     <font face="標楷體">
     <title>張仁瑋的首頁</title>
   </head>
-  <body background=images.jpg>
+  
+  <body background=images.jpg onload="startClock()" onunload="stopClock()">
     <h1>張仁瑋的首頁</h1>
   <p align="right">
     <h3>我喜歡詛咒人 尤其特別討厭的人</h3>
     <br>
-<img src="photo.jpg">
+<img src="pic00.jpg" alt=""onmousedown="this.src=nextImage()"
+                               onmouseover="this.src=randomImage()">
          <script>
     var curIndex=0;
     var imgArray=new Array();
